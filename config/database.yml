@@ -7,19 +7,19 @@ default: &default
 
 development:
   <<: *default
-  database: mobile_web_development
+  database: gamesdb_development
   username: ~
   password: ~
 
 test:
   <<: *default
-  database: mobile_web_test
+  database: gamesdb_test
   username: ~
   password: ~
 
 production:
   <<: *default
-  database: mobile_web_
+  database: gamesdb
   username: ~
   password: ~
 
