@@ -1,0 +1,47 @@
+<div>
+
+  <h2 align="center" id="page_title" style="color:#f4f4f4">Accepted</h2>
+
+  <div class="card">
+    <table id='datatable' class="display" width="100%">
+      <thead>
+      <tr>
+        <% report.results.headers.each do |header| %>
+            <th>
+              <%= report.format_header(header) %>
+            </th>
+        <% end %>
+      </tr>
+      </thead>
+      <tbody>
+      <% report.results.body.each do |row| %>
+          <tr align="left">
+            <% row.each do |value| %>
+                <td>
+                  <%= value %>
+                </td>
+            <% end %>
+          </tr>
+      <% end %>
+      </tbody>
+      <% if report.results.footers.any? %>
+          <tfoot>
+          <% report.results.footers.each do |row| %>
+              <tr>
+                <% row.each do |value| %>
+                    <th>
+                      <%= value %>
+                    </th>
+                <% end %>
+              </tr>
+          <% end %>
+          </tfoot>
+      <% end %>
+    </table>
+
+  </div>
+</div>
+
+
+
+

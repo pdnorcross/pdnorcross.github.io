@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  pool: 5
+
+development:
+  <<: *default
+  database: mobile_web_development
+  username: ~
+  password: ~
+
+test:
+  <<: *default
+  database: mobile_web_test
+  username: ~
+  password: ~
+
+production:
+  <<: *default
+  database: mobile_web_
+  username: ~
+  password: ~
+
