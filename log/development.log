@@ -36502,3 +36502,33 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/" for ::1 at 2016-05-05 01:29:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (21.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (11.3ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 1096ms (Views: 1080.1ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-05 01:29:44 -0500
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.4ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/title.js" for ::1 at 2016-05-05 01:29:44 -0500
+
+
+Started GET "/assets/styles.css" for ::1 at 2016-05-05 01:29:44 -0500
+
+
+Started GET "/assets/global.css" for ::1 at 2016-05-05 01:29:44 -0500
+
+
+Started GET "/assets/application.css" for ::1 at 2016-05-05 01:29:44 -0500
+
+
+Started GET "/assets/user.jpg" for ::1 at 2016-05-05 01:29:45 -0500
