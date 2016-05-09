@@ -1,28 +1,32 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A video Game tracking application. Used to track my video game collection. Currently Supports
+Xbox1
+WiiU
+Wii
+Xbox360
+Xbox
+Gamecube
+Playstation 2
+N64
+Playstation
+Sega Saturn
+Super Nintendo
+Sega Genesis
+Nintendo Entertainment System
+PC
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+
+
+Ruby 2.2.3
+Rails 4.2.5
+
+Set-up:
+Bundle install
+Bundle Update
+Rake db:create
+Rake db:migrate
+
+When importing use the numbers above to set system. Will have it so that your will preset DB for numbers above for
+consoles and will include a larger vairety including handheld games
